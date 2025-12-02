@@ -1,0 +1,186 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.mon-portfolio-global {
+    background-color: #16213e;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    height: 650px;
+}
+
+.ma-barre-laterale {
+    background: linear-gradient(135deg, #0f4c75 0%, #1b262c 100%);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.photo-ronde {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3282b8;
+    margin-bottom: 20px;
+}
+
+.ma-barre-laterale h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.sous-titre {
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 5px 0;
+}
+
+.zone-contenu-principal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #0f3460;
+}
+
+.barre-menu {
+    background-color: #1b262c;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    border-bottom: 2px solid #3282b8;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.bouton-nav {
+    background-color: transparent;
+    border: 2px solid #3282b8;
+    color: #3282b8;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bouton-nav:hover {
+    background-color: #3282b8;
+    color: white;
+    transform: translateY(-2px);
+}
+
+#radio-accueil:checked ~ .zone-contenu-principal .barre-menu label[for="radio-accueil"],
+#radio-parcours:checked ~ .zone-contenu-principal .barre-menu label[for="radio-parcours"],
+#radio-competences:checked ~ .zone-contenu-principal .barre-menu label[for="radio-competences"],
+#radio-projets:checked ~ .zone-contenu-principal .barre-menu label[for="radio-projets"],
+#radio-contact:checked ~ .zone-contenu-principal .barre-menu label[for="radio-contact"] {
+    background-color: #3282b8;
+    color: white;
+}
+
+.contenu-section {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    color: #e0e0e0;
+}
+
+.section {
+    display: none;
+    animation: fadeIn 0.5s;
+}
+
+#radio-accueil:checked ~ .zone-contenu-principal #accueil,
+#radio-parcours:checked ~ .zone-contenu-principal #parcours,
+#radio-competences:checked ~ .zone-contenu-principal #competences,
+#radio-projets:checked ~ .zone-contenu-principal #projets,
+#radio-contact:checked ~ .zone-contenu-principal #contact {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    color: #3282b8;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+h3 {
+    color: #e0e0e0;
+}
+
+.item-liste {
+    background-color: #1b262c;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid #3282b8;
+}
+
+.item-liste h3 {
+    color: #3282b8;
+    margin-top: 0;
+}
+
+.competence-tag {
+    display: inline-block;
+    background-color: #3282b8;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    color: #e0e0e0;
+}
+
+.contact-info i {
+    color: #3282b8;
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1b262c;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3282b8;
+    border-radius: 4px;
+}

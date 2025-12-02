@@ -1,44 +1,113 @@
 <!DOCTYPE html>
-<html lang="Fr">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Ma premiere présentation</title>
+    <title>Portfolio - Amarouche Lounes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+<div class="mon-portfolio-global">
+        
+        <!-- Radio buttons cachés pour la navigation -->
+        <input type="radio" name="navigation" id="radio-accueil" checked>
+        <input type="radio" name="navigation" id="radio-parcours">
+        <input type="radio" name="navigation" id="radio-competences">
+        <input type="radio" name="navigation" id="radio-projets">
+        <input type="radio" name="navigation" id="radio-contact">
+        
+        <div class="ma-barre-laterale">
+            <img src="images/Photo.jpg" alt="Amarouche Lounes" class="photo-ronde">
+            <h3>Amarouche Lounes</h3>
+            <p> Tèlècharger <a href="CV.pdf">Mon Cv</a></p>
+            <p class="sous-titre">Licence Informatique</p>
+        </div>
 
-<body>
-    <header> 
-        <h1 id='titre principal'>Bienvenue sur ma prèsentation</h1>
-        <nav>
-            <a href =''>Prèsentation</a>
-            <a href =''>Parcours</a>
-            <a href=''>contact</a>
-        </nav>
-    </header>
-    <hr>
-    <main>
+        <div class="zone-contenu-principal">
+            
+            <div class="barre-menu">
+                <label for="radio-accueil" class="bouton-nav">
+                    Acceuil
+                </label>
+                <label for="radio-parcours" class="bouton-nav">
+                    Parcours
+                </label>
+                <label for="radio-competences" class="bouton-nav">
+                    Compétences
+                </label>
+                <label for="radio-projets" class="bouton-nav">
+                    Projets
+                </label>
+                <label for="radio-contact" class="bouton-nav">
+                    Contact
+                </label>
+            </div>
 
-<body>
-    <header>
-  <section>
-    <h1>Prèsentation</h1>
-    <p> <strong> Etudiant en L1 informatique à l’Université de  Mouloud Mammeri de Tizi Ouzou , Algérie    |2024/2025|</strong>  <br>
-      <strong> Etudiant  en  L1 informatique à l’Université du Littoral Côte d’Opale (ULCO) à Calais      |2025/2026| </strong>
-     </p>
-      </section><hr>
-      </header>
-        <section>
-            <h1>Mon Parcours</h1>
-            <p> <strong>Email : lwennasamz@gmail.com </strong></p>
-            <p><strong> Trouvez mon parcours sur <a href="https://Google.com">le lien </strong></a>
-        </section> <hr>
-    </main>
+            <div class="contenu-section">
+                
+                <div id="accueil" class="section">
+                    <h2>Bienvenue sur mon Portfolio</h2>
+                    <p>Bonjour, je suis <strong>Amarouche Lounes</strong>, étudiant en Licence 1 Informatique passionné par l'informatique depuis tout petit.</p>
+                    <p>Ce portfolio présente mon parcours, mes compétences et mes projets.</p>
+                </div>
 
-    <footer>
-        <h1> Droit d'auteur</h1>
-      <p> <strong> Contenu protègé par le droit d'auteur </strong></p>
+                <div id="parcours" class="section">
+                    <h2>Mon Parcours</h2>
+                    <div class="item-liste">
+                        <h3>Baccalauréat</h3>
+                        <p><i class="fas fa-calendar"></i> 2024</p>
+                        <p>Année d'obtention du bac</p>
+                    </div>
+                    <div class="item-liste">
+                        <h3>1ère année en Licence Informatique à l'UMMTO, Algérie</h3>
+                        <p><i class="fas fa-calendar"></i> 2024/2025</p>
+                        <p>Formation en développement logiciel, algorithmique et bases de données.</p>
+                    </div>
+                    <div class="item-liste">
+                        <h3>1ère année en Licence Informatique à l'ULCO, France (année en cours)</h3>
+                        <p><i class="fas fa-calendar"></i> 2025/2026</p>
+                        <p>Poursuite de la formation en informatique.</p>
+                    </div>
+                </div>
 
-    </footer>
-    
+                <div id="competences" class="section">
+                    <h2>Mes Compétences</h2>
+                    <h3>Langages de programmation</h3>
+                    <div>
+                        <span class="competence-tag">Python</span>
+                        <span class="competence-tag">C</span>
+                        <span class="competence-tag">Pascal</span>
+                        <span class="competence-tag">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <div id="projets" class="section">
+                    <h2>Mes Projets</h2>
+                    <div class="item-liste">
+                        <h3>Portfolio Personnel</h3>
+                        <p>Création d'un site web portfolio responsive avec HTML et CSS.</p>
+                    </div>
+                </div>
+
+                <div id="contact" class="section">
+                    <h2>Me Contacter</h2>
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <span>lwennasasmz@gmail.com</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <span>+33 6 59 28 44 34</span>
+                    </div>
+                    <div class="contact-info">
+                        <i class="fab fa-github"></i>
+                        <span>https://lwennasamz.github.io/mon-portfolio/</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
